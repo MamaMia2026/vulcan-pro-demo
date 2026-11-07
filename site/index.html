@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Vulcan Pro — vulcanizare și echilibrare, programare pe oră (machetă demo)</title>
+<meta name="description" content="Machetă demo pentru o vulcanizare: programare pe oră cu preț și durată calculate pe loc, prețuri pe dimensiuni R13–R22, hotel de anvelope. Prețuri și date de exemplu.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#1c1d20">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/teko-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/chivo-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" as="image" href="img/clip1.webp" imagesrcset="img/clip1-480.webp 480w, img/clip1.webp 720w" imagesizes="(max-width:980px) 100vw, 420px" fetchpriority="high">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#programare">Sari la programare</a>
+<div class="demo-bar" role="note">Machetă demo – prețuri, durate și date de exemplu<span data-test-note></span></div>
+<aside class="season" data-season hidden aria-label="Anunț sezonier"><div class="wrap"><span data-season-text></span> <a href="#programare">Alege ora<svg class="ar" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></div></aside>
+
+<header class="hdr">
+<div class="wrap hdr-row">
+<a class="logo" href="#acasa"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="#e10600" stroke-width="4"/><circle cx="16" cy="16" r="5" fill="#fff"/></svg><b>Vulcan<span>Pro</span></b></a>
+<nav class="nav" aria-label="Meniu"><a href="#programare"><i>01</i>Programare</a><a href="#preturi"><i>02</i>Prețuri</a><a href="#hotel"><i>03</i>Hotel</a><a href="#garantii"><i>04</i>Garanții</a><a href="#contact-info"><i>05</i>Contact</a></nav>
+<p class="open-now closed" data-open-now role="status"><i aria-hidden="true"></i><span data-open-text>Program L–S 08–20</span></p>
+</div>
+<nav class="chips" aria-label="Meniu rapid"><ul><li><a href="#programare"><i>01</i>Programare</a></li><li><a href="#preturi"><i>02</i>Prețuri</a></li><li><a href="#hotel"><i>03</i>Hotel anvelope</a></li><li><a href="#garantii"><i>04</i>Garanții</a></li><li><a href="#contact-info"><i>05</i>Program și adresă</a></li></ul></nav>
+</header>
+
+<main>
+<section class="hero" id="acasa"><div class="wrap">
+<div class="copy">
+<p class="tag"><b>00</b>Vulcanizare · Echilibrare · Hotel anvelope</p>
+<h1>Roți schimbate. <em>Fără coadă.</em></h1>
+<p class="lead">Vă alegeți ora online, veniți și plecați în aproximativ <span data-r16-min>40</span> de minute. Echilibrare computerizată, montaj cu cheie dinamometrică și hotel pentru anvelopele de sezon.</p>
+<div class="acts"><a class="btn btn-red" href="#programare">Programează-te online</a><a class="btn btn-line" href="#preturi">Prețuri pe dimensiuni</a></div>
+<ul class="gauges"><li><b data-r16-min>40</b><small>min</small><span>schimb complet R16</span></li><li><b>2</b><small>min</small><span>echilibrare / roată</span></li><li><b>0</b><small>min</small><span>la coadă</span></li></ul>
+</div>
+<figure class="tire">
+<img src="img/clip1.webp" srcset="img/clip1-480.webp 480w, img/clip1.webp 720w" sizes="(max-width:980px) 100vw, 420px" width="720" height="1020" alt="" fetchpriority="high" decoding="async">
+<video muted loop playsinline preload="none" width="720" height="1020" aria-hidden="true" data-hero-video><source data-src="img/clip1.webm" type="video/webm"><source data-src="img/clip1.mp4" type="video/mp4"></video>
+<figcaption><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8" fill="none" stroke="#fff" stroke-width="2"/><path d="M12 13V9M9 2h6" stroke="#fff" stroke-width="2"/></svg>Echilibrare <b>2 min</b></figcaption>
+</figure>
+</div></section>
+
+<section class="book" id="programare"><div class="wrap">
+<div class="head"><div><p class="tag"><b>01</b>Programare pe oră</p><h2>Alegeți ora. Noi pregătim elevatorul.</h2></div><p>Prețul și durata se calculează pe loc, după serviciu, diametrul jantei și tipul mașinii. Orele care nu încap până la închidere nu se pot alege.</p></div>
+
+<form class="bk" name="programare" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" aria-label="Programare la vulcanizare" data-booking novalidate>
+<input type="hidden" name="form-name" value="programare">
+<p class="hp" aria-hidden="true"><label>Nu completați<input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+<input type="hidden" name="serviciu" data-h="serviciu">
+<input type="hidden" name="diametru" data-h="diametru">
+<input type="hidden" name="tip_vehicul" data-h="tip_vehicul">
+<input type="hidden" name="extra" data-h="extra">
+<input type="hidden" name="ziua" data-h="ziua">
+<input type="hidden" name="ora" data-h="ora">
+<input type="hidden" name="durata" data-h="durata">
+<input type="hidden" name="total" data-h="total">
+
+<div class="bk-main">
+<fieldset class="step"><legend><b>1</b>Serviciul</legend>
+<div class="opts svc" data-svcs></div></fieldset>
+
+<fieldset class="step"><legend><b>2</b>Mașina și janta</legend>
+<div class="opts veh" data-vehs>
+<button class="opt" type="button" data-veh="auto" aria-pressed="true">Autoturism<small>prețurile din tabel</small></button>
+<button class="opt" type="button" data-veh="suv" aria-pressed="false">SUV / van<small data-suv-sub>+20% · +10 min</small></button>
+</div>
+<p class="sub-l" id="rim-l">Diametrul jantei</p>
+<div class="opts rim" data-rims role="group" aria-labelledby="rim-l"></div>
+
+<details class="sizehelp" data-sizehelp>
+<summary>Ce dimensiune am? <span>Cum citiți 205/55 R16 de pe anvelopă</span></summary>
+<div class="sh-body">
+<svg class="sh-svg" viewBox="0 0 640 230" role="img" aria-labelledby="sh-t">
+<title id="sh-t">Flancul anvelopei cu inscripția dimensiunii</title>
+<defs><path id="sh-arc" d="M40,215 A 360 360 0 0 1 600,215"/></defs>
+<path d="M-20,230 A 420 420 0 0 1 660,230 L560,230 A 300 300 0 0 0 80,230 Z" fill="#121315"/>
+<path d="M-20,230 A 420 420 0 0 1 660,230" fill="none" stroke="#3a3d42" stroke-width="3"/>
+<path d="M80,230 A 300 300 0 0 1 560,230" fill="none" stroke="#3a3d42" stroke-width="2" stroke-dasharray="2 8"/>
+<text class="sh-txt"><textPath href="#sh-arc" startOffset="50%" text-anchor="middle"><tspan class="c-w" data-sh-w>205</tspan><tspan fill="#8a8f97">/</tspan><tspan class="c-p" data-sh-p>55</tspan><tspan fill="#8a8f97"> </tspan><tspan class="c-r" data-sh-r>R16</tspan><tspan fill="#6d727a"> 91V</tspan></textPath></text>
+</svg>
+<ol class="sh-key">
+<li><i class="c-w-bg" aria-hidden="true"></i><b data-sh-w>205</b><span>lățimea anvelopei, în milimetri</span></li>
+<li><i class="c-p-bg" aria-hidden="true"></i><b data-sh-p>55</b><span>înălțimea flancului, în % din lățime</span></li>
+<li><i class="c-r-bg" aria-hidden="true"></i><b data-sh-r>R16</b><span>diametrul jantei, în țoli – <strong>asta alegeți la programare</strong></span></li>
+<li><i aria-hidden="true"></i><b>91V</b><span>indicii de sarcină și viteză (nu contează pentru programare)</span></li>
+</ol>
+<p class="sh-hint">Inscripția e pe flancul anvelopei, cu litere în relief. O găsiți și pe eticheta din cadrul ușii șoferului.</p>
+<div class="sh-pick">
+<label>Lățime<select data-sh-in="w"></select></label>
+<label>Profil<select data-sh-in="p"></select></label>
+<label>Diametru<select data-sh-in="r"></select></label>
+<button class="btn btn-red" type="button" data-sh-use>Folosește <span data-sh-r>R16</span></button>
+</div>
+</div>
+</details>
+</fieldset>
+
+<fieldset class="step"><legend><b>3</b>Extra <span class="opt-l">opțional</span></legend>
+<div class="opts ext" data-extras></div></fieldset>
+
+<fieldset class="step"><legend><b>4</b>Ziua</legend>
+<div class="opts days" data-days></div>
+<p class="day-note" data-day-note hidden></p></fieldset>
+
+<fieldset class="step"><legend><b>5</b>Ora</legend>
+<div class="opts slots" data-slots></div>
+<p class="legend"><span><i></i>liber</span><span class="l-busy"><i></i>ocupat</span><span class="l-late"><i></i>nu încape până la închidere</span><span class="l-sel"><i></i>ales</span></p></fieldset>
+
+<fieldset class="step"><legend><b>6</b>Datele dumneavoastră</legend>
+<div class="fields">
+<label>Nume<input name="nume" autocomplete="name" required></label>
+<label>Telefon<input name="telefon" type="tel" autocomplete="tel" inputmode="tel" required data-phone></label>
+<label>Nr. înmatriculare<input name="numar_inmatriculare" autocomplete="off" placeholder="TM 00 ABC" required data-upper></label>
+</div></fieldset>
+</div>
+
+<aside class="sum" aria-label="Rezumatul programării">
+<p class="sum-head">Rezumat programare</p>
+<dl>
+<div><dt>Serviciu</dt><dd data-s="svc">—</dd></div>
+<div><dt>Mașina</dt><dd data-s="veh">—</dd></div>
+<div><dt>Jantă</dt><dd data-s="rim">—</dd></div>
+<div><dt>Extra</dt><dd data-s="extra">—</dd></div>
+<div><dt>Ziua</dt><dd data-s="day">—</dd></div>
+<div><dt>Ora</dt><dd data-s="time">alegeți ora</dd></div>
+<div><dt>Durată</dt><dd data-s="dur">—</dd></div>
+</dl>
+<ul class="lines" data-s="lines"></ul>
+<div class="total"><span>Total</span><output data-s="price" aria-live="polite">—</output></div>
+<button class="btn btn-red" type="submit">Programează-te</button>
+<button class="btn btn-wa" type="button" data-wa-booking>Trimite pe WhatsApp</button>
+<p class="msg" data-msg role="alert"></p>
+<p class="fine">Prețul afișat e prețul final (exemplu demo). Plătiți la final, cash sau card.</p>
+</aside>
+</form>
+
+<div class="thanks" data-thanks hidden tabindex="-1">
+<p class="tag"><b><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2"/></svg></b>Programare trimisă</p>
+<h3>Mulțumim, <span data-t-name></span>!</h3>
+<p>Am primit programarea. Vă sunăm pentru confirmare la <strong data-t-phone></strong>.</p>
+<dl class="t-sum" data-t-sum></dl>
+<button class="btn btn-line" type="button" data-t-again>Programare nouă</button>
+<p class="fine">Machetă demo: cererea e trimisă prin Netlify Forms; pe site-ul real ajunge la atelier.</p>
+</div>
+</div></section>
+
+<section id="preturi"><div class="wrap">
+<div class="head"><div><p class="tag"><b>02</b>Prețuri pe dimensiuni</p><h2>Știți prețul înainte să veniți</h2></div><p>Schimb 4 roți cu echilibrare, lei cu TVA. SUV și van: +<span data-suv-pct>20</span>%. Jantele marcate „fără levier” se montează cu dispozitiv fără levier.</p></div>
+<div class="tbl-wrap" tabindex="0" role="region" aria-label="Tabel de prețuri pe diametrul jantei"><table>
+<thead><tr><th scope="col">Jantă</th><th scope="col">Schimb 4 roți<br><small>autoturism</small></th><th scope="col">Schimb 4 roți<br><small>SUV / van +<span data-suv-pct>20</span>%</small></th><th scope="col">Doar echilibrare<br><small>4 roți, autoturism</small></th><th scope="col">Durată<br><small>schimb, autoturism</small></th><th scope="col">Hotel / sezon<br><small>cu schimb inclus</small></th></tr></thead>
+<tbody data-price-table></tbody>
+</table></div>
+<p class="note" data-levier-note></p>
+<div class="extras" data-extra-cards></div>
+<p class="note">Prețuri de exemplu (machetă demo). Pe site-ul real se completează tarifele atelierului.</p>
+</div></section>
+
+<section class="hotel" id="hotel"><div class="wrap">
+<div class="ht">
+<div class="racks" aria-hidden="true"><span></span><span></span><span class="free"></span><span></span><span></span><span></span><span></span><span class="you"></span><span></span><span class="free"></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="free"></span><span></span><p>Raft 3 · locul 08 rezervat pentru setul dumneavoastră</p></div>
+<div>
+<p class="tag"><b>03</b>Hotel de anvelope</p>
+<h2 class="h2-big">Nu le mai cărați prin bloc</h2>
+<ul>
+<li><b>01</b><span>Spălăm roțile, verificăm uzura și vă trimitem poze cu profilul măsurat.</span></li>
+<li><b>02</b><span>Le depozităm etichetate, pe rafturi, în spațiu uscat și ferit de lumină.</span></li>
+<li><b>03</b><span>La schimbul de sezon vă sunăm noi. Montajul și echilibrarea sunt incluse.</span></li>
+</ul>
+<p class="price"><b>de la <span data-hotel-min>200</span> lei</b><span>/ sezon, set de 4, cu schimb inclus</span></p>
+</div>
+</div>
+
+<div class="hf-wrap">
+<form class="hf" name="hotel-anvelope" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" data-hotel novalidate aria-label="Înscriere la hotelul de anvelope">
+<input type="hidden" name="form-name" value="hotel-anvelope">
+<p class="hp" aria-hidden="true"><label>Nu completați<input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+<input type="hidden" name="dimensiune" data-hh="dimensiune">
+<input type="hidden" name="pret_sezon" data-hh="pret_sezon">
+<input type="hidden" name="pret_an" data-hh="pret_an">
+<input type="hidden" name="total_de_plata" data-hh="total">
+<h3>Înscriere la hotel</h3>
+<div class="hf-grid">
+<fieldset class="hf-size"><legend>Dimensiunea anvelopelor</legend>
+<label>Lățime<select data-hs="w" aria-label="Lățime"></select></label><span aria-hidden="true">/</span>
+<label>Profil<select data-hs="p" aria-label="Profil"></select></label>
+<label>Diametru<select data-hs="r" aria-label="Diametru"></select></label>
+</fieldset>
+<fieldset class="hf-radio"><legend>Roțile vin</legend>
+<label><input type="radio" name="jante" value="fără jante" checked> doar anvelopele</label>
+<label><input type="radio" name="jante" value="cu jante"> cu jante (roți complete) <small data-jante-extra>+30 lei/sezon</small></label>
+</fieldset>
+<label class="hf-f">Sezonul curent<select name="sezon" data-hotel-season></select></label>
+<fieldset class="hf-radio"><legend>Plata</legend>
+<label><input type="radio" name="plata" value="pe sezon" checked> pe sezon</label>
+<label><input type="radio" name="plata" value="pe an"> pe un an (2 sezoane) <small>−<span data-hotel-disc>10</span>%</small></label>
+</fieldset>
+<label class="hf-f">Nume<input name="nume" autocomplete="name" required></label>
+<label class="hf-f">Telefon<input name="telefon" type="tel" autocomplete="tel" inputmode="tel" required data-phone></label>
+<label class="hf-f">Nr. înmatriculare<input name="numar_inmatriculare" autocomplete="off" placeholder="TM 00 ABC" required data-upper></label>
+</div>
+<div class="hf-calc" aria-live="polite">
+<div><span>Pe sezon</span><b data-hc="sezon">—</b></div>
+<div><span>Pe an · 2 sezoane</span><b data-hc="an">—</b><small data-hc="an-note"></small></div>
+<div class="hf-tot"><span>De plată acum</span><b data-hc="total">—</b></div>
+</div>
+<button class="btn btn-red" type="submit">Trimite înscrierea</button>
+<p class="msg" data-hmsg role="alert"></p>
+</form>
+<div class="thanks light" data-hthanks hidden tabindex="-1">
+<p class="tag"><b><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7.5l3 3 7-7" fill="none" stroke="#fff" stroke-width="2.2"/></svg></b>Înscriere trimisă</p>
+<h3>Mulțumim!</h3>
+<p data-ht-text></p>
+<button class="btn btn-line" type="button" data-ht-again>Altă înscriere</button>
+</div>
+</div>
+</div></section>
+
+<section id="garantii"><div class="wrap">
+<div class="head"><div><p class="tag"><b>04</b>Garanțiile noastre</p><h2>Ce primiți de fiecare dată</h2></div><p>Fără surprize la casă și fără zgârieturi pe jante.</p></div>
+<div class="gr">
+<div><b>01</b><h3>Prețul de pe site e prețul final</h3><p>Plătiți exact suma din rezumatul programării. Dacă descoperim ceva în plus, vă întrebăm înainte.</p></div>
+<div><b>02</b><h3>Strânse cu cheie dinamometrică</h3><p>Fiecare prezon e strâns la cuplul indicat de producătorul mașinii, nu „din pistol”.</p></div>
+<div><b>03</b><h3>Low-profile fără levier</h3><p>Jantele mari și anvelopele cu profil jos se montează cu dispozitiv fără levier.</p></div>
+<div><b>04</b><h3>Presiunea, verificată gratuit</h3><p>Treceți oricând în program: verificăm presiunea în toate roțile, fără programare și fără cost.</p></div>
+</div>
+<div class="rv-ph" role="note"><p><strong>Review-urile reale de pe Google apar aici</strong></p><p>Pe site-ul real, aici se afișează recenziile din profilul Google al atelierului. Macheta nu conține recenzii sau note inventate.</p></div>
+</div></section>
+
+<section class="ct" id="contact-info"><div class="wrap ct-grid">
+<div><p class="tag"><b>05</b>Program</p><h2 data-open-days>Deschis 6 zile</h2>
+<dl class="hours" data-hours></dl></div>
+<div><p class="tag"><b>06</b>Adresă</p><h2>Atelierul</h2><p>Str. Exemplu nr. 27, [Oraș]<br>Intrare din parcarea din spate, 4 elevatoare, sală de așteptare cu cafea.</p><p>Parcare gratuită pentru clienți.</p></div>
+<div><p class="tag"><b>07</b>Telefon</p><h2>Sunați-ne</h2><a class="big" href="tel:+40700000000" data-tel>0700 000 000</a><p>Răspundem în program. Pentru urgențe pe drum, scrieți-ne pe WhatsApp.</p><a class="btn btn-red" href="https://wa.me/40700000000" data-wa rel="noopener" target="_blank">Scrie-ne pe WhatsApp</a></div>
+</div></section>
+</main>
+
+<footer class="foot"><div class="wrap">
+<p class="firm">[Denumire firmă SRL] · CUI [—] · Nr. Reg. Com. [—] · Str. Exemplu nr. 27, [Oraș] · <a href="tel:+40700000000" data-tel>0700 000 000</a></p>
+<p class="made">Machetă demo · Site realizat de CristianWeb · <a href="https://cristianweb.ro" rel="noopener">Vreau un site ca acesta<svg class="ar" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a></p>
+<a class="up" href="#acasa">Înapoi sus ↑</a>
+</div></footer>
+
+<nav class="dock" aria-label="Contact rapid"><a class="d-call" href="tel:+40700000000" data-tel-link>Sună acum</a><a class="d-wa" href="https://wa.me/40700000000" data-wa rel="noopener" target="_blank">WhatsApp</a></nav>
+<script src="js/data.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
