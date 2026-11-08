@@ -34,7 +34,8 @@ Site static (fără framework) în `site/`, construit din modelul „vulcanizare
 
 ## Media (din `cristianweb/modele/media/vulcanizare/`)
 - `clip1.webp` (poster 720×1020), `clip1.webm`, `clip1.mp4` – erou; `clip1-480.webp` – poster redus pentru telefon (generat din `clip1.webp`).
-- Video-ul pornește doar pe ecrane > 980 px, după încărcarea paginii (nu și cu „reduce motion” / economisire date).
+- `clip1-480.mp4` – video-ul pentru telefon (480×680, fără sunet, ~0,6 MB, generat din `clip1.mp4`).
+- Video-ul pornește pe toate ecranele după încărcarea paginii (telefon: `clip1-480.mp4`, desktop: `clip1.webm` / `clip1.mp4`), se oprește când eroul iese din ecran; rămâne posterul cu „reduce motion”, economisire date sau autoplay blocat.
 - Fonturi: Teko și Chivo (SIL Open Font License), subseturi latin + latin-ext.
 
 ## Altele

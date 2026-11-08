@@ -440,16 +440,28 @@
     update();
   })();
 
-  // ---------- video în erou: doar pe ecrane late, după încărcarea paginii ----------
+  // ---------- video în erou: pe toate ecranele, după încărcarea paginii ----------
+  // Telefon: clip1-480.mp4 (~0,6 MB); desktop: clip1.webm / clip1.mp4. Rămâne posterul dacă
+  // utilizatorul cere economisire de date sau mai puțină animație, ori dacă autoplay e blocat.
   window.addEventListener('load', function () {
     var v = $('[data-hero-video]');
     var conn = navigator.connection || {};
-    if (!v || reduceMotion || conn.saveData || !matchMedia('(min-width: 981px)').matches) return;
+    if (!v || reduceMotion || conn.saveData) return;
+    var play = function () { var p = v.play(); if (p && p.catch) p.catch(function () { /* autoplay blocat: rămâne posterul */ }); };
     setTimeout(function () {
-      $$('source', v).forEach(function (s) { s.src = s.getAttribute('data-src'); });
-      v.load();
+      if (matchMedia('(max-width: 980px)').matches) {
+        $$('source', v).forEach(function (s) { s.remove(); });
+        v.src = 'img/clip1-480.mp4';
+      } else {
+        $$('source', v).forEach(function (s) { s.src = s.getAttribute('data-src'); });
+        v.load();
+      }
       v.addEventListener('playing', function () { v.classList.add('on'); }, { once: true });
-      var p = v.play(); if (p && p.catch) p.catch(function () { /* autoplay blocat: rămâne posterul */ });
+      play();
+      // pauză când eroul iese din ecran (baterie, date), reluare când revine
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (en) { if (en[0].isIntersecting) play(); else v.pause(); }).observe(v);
+      }
     }, 600);
   });
 })();
